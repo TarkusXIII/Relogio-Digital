@@ -47,9 +47,9 @@ botaoDesign.addEventListener("click", function() {
 });
 
 let imagensFundo = [
-    "url('fundos/Your Name 4k .jpg')",
-    "url('fundos/newjeans.jpg')",
-    "url('fundos/Your Name Falling GIF.gif')",
+    "url('Fundos/Your Name 4k .jpg')",
+    "url('Fundos/newjeans.jpg')",
+    "url('Fundos/Your Name Falling GIF.gif')",
 ];
 
 let fundoAtual = 0;
