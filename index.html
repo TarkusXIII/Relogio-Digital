@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Relógio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="container-relogios">
+    
+    <div id="bloco-local">
+        <h2>Horário Local</h2>
+        <div id="relogio-com-botao">
+            <button id="btn-fonte">Mudar Design</button>
+            <button id="btn-fundo">Mudar Fundo</button>
+            <div id="relogio-local">00:00:00</div>
+        </div>
+    </div>
+
+    <div id="bloco-estrangeiro">
+        <h2 id="nome-pais">Selecione um país</h2>
+        <div id="relogio-estrangeiro">--:--:--</div>
+        <p id="diferenca-horas">Diferença de horário aqui</p>
+    </div>
+
+</div>
+
+<div id="menu-paises">
+    <button id="btn-eua">Estados Unidos (NY)</button>
+    <button id="btn-coreia">Coreia do Sul (Seul)</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'RelógioDigital';
+    src: url('Fontes/digital.ttf');
+}
+
+body {
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    font-family: 'Courier New',Courier,monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    gap: 60px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#relogio-com-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#btn-fundo {
+    position: absolute;
+    left: -190px;
+    bottom: -20px;
+    color: #e1d5d5;
+    border-color: #1bb889;
+    font-size: 77%;
+}
+
+#btn-fonte {
+    position: absolute;
+    left: -190px;
+    bottom: 30px;
+    color: #e1d5d5;
+    border-color: #1bb889;
+    font-size: 70%;
+}
+
+#container-relogios {
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+
+#relogio-local, #relogio-estrangeiro {
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 8px;
+
+    text-shadow: 
+        0 0 10px rgba(0, 255, 255, 1),  
+        0 0 20px rgba(0, 255, 255, 0.8),  
+        2px 2px 5px rgba(0, 0, 0, 1),    
+        -2px -2px 5px rgba(0, 0, 0, 1),  
+        0 0 15px rgba(0, 0, 0, 1); 
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: 1px solid rgba(0, 255, 255, 0.8);
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-family: inherit;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    
+    text-shadow: 
+        0 0 8px rgba(0, 255, 255, 0.9),   
+        0 0 15px rgba(0, 255, 255, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 1); 
+        
+    /* Adiciona um brilho neon em volta da caixa do botão */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), inset 0 0 10px rgba(0, 255, 255, 0.1); 
+}
+
+.fonte-alternativa {
+    font-family: 'RelógioDigital', sans-serif;
+    color: #ffffff; 
+}
+
+h2, #diferenca-horas, #nome-pais {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9), -1px -1px 5px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+button:hover {
+    text-shadow: 
+        0 0 8px rgba(0, 255, 255, 1),
+        0 0 15px rgba(0, 255, 255, 0.8),
+        1px 1px 3px rgba(0, 0, 0, 1);
+    border-color: #00ffff; 
+}
